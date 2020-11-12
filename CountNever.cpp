@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 int Check = 0, sum = 0;
-char str[201],x;
+char str[201], x;
 char* p;
 
 void check() {
@@ -13,19 +13,19 @@ void check() {
 		{
 			p++;
 			Check++;
-			if (*p == 'E' or *p == 'e') 
+			if (*p == 'e')
 			{
 				p++;
 				Check++;
-				if (*p == 'V' or *p == 'v') 
+				if (*p == 'v')
 				{
 					p++;
 					Check++;
-					if (*p == 'E' or *p == 'e') 
+					if (*p == 'e')
 					{
 						p++;
 						Check++;
-						if (*p == 'R' or *p == 'r') 
+						if (*p == 'r')
 						{
 							sum++;
 							p++;
